@@ -21,7 +21,7 @@ public class Main {
         System.out.println(" ");
 
         BigDecimal netPrice = new BigDecimal("9.99");
-        BigDecimal vatRate = new BigDecimal("0.23");
+
         BigDecimal quantity = new BigDecimal("10000");
 
         // Calculate gross price
@@ -34,8 +34,8 @@ public class Main {
         System.out.printf("Total gross value for 10,000 products: %.2f%n", bd_total_Gross);
 
         // Calculate total net value excluding VAT
-        BigDecimal bdtotal_Net = bd_total_Gross.divide(new BigDecimal("1.23"), 2, BigDecimal.ROUND_HALF_EVEN);
-        System.out.printf("Total net value for 10,000 products: %.2f%n", bdtotal_Net);
+        BigDecimal total_Net = bd_total_Gross.divide(new BigDecimal("1.23"), 2, BigDecimal.ROUND_HALF_EVEN);
+        System.out.printf("Total net value for 10,000 products: %.2f%n", total_Net);
 
     }
 }
